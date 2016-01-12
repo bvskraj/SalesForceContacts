@@ -1,0 +1,18 @@
+<!--<!DOCTYPE html>
+<html ng-app="contacts">
+<head>
+	<title>Contacts</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>-->
+<div ng-controller = "ShowAllContacts as contact">
+<h1>Showing Contacts</h1>
+<div ng-repeat = 'person in contact.result'>
+	<a ng-href="#/GetDetails/{{person.Id}}">{{person.FirstName}} </a>
+</div>
+<h2>shown</h2>
+</div>
+
+
+
+
